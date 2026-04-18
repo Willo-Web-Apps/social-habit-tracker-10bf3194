@@ -1,11 +1,29 @@
 ---
 ---
-<header class="sticky top-0 z-50 border-b border-surface-200 bg-surface-50/80 backdrop-blur-lg">
+<header class="sticky top-0 z-50 border-b border-surface-200 bg-surface-50/85 backdrop-blur-lg">
   <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
-    <a href="/" class="text-lg font-bold tracking-tight text-surface-900 font-display">Your New Business</a>
-    <div class="flex items-center gap-6">
-      <a href="/blog" class="text-sm font-medium text-surface-800/60 hover:text-surface-900 transition-colors">Blog</a>
-      <a href="#cta" class="text-sm font-semibold bg-brand-500 text-white px-4 py-2 rounded-lg hover:bg-brand-600 transition-colors">Get Started</a>
+    <!-- Logo -->
+    <a href="/" class="flex items-center gap-2.5 group">
+      <div class="w-8 h-8 rounded-lg bg-brand-500 flex items-center justify-center shadow-sm shadow-brand-500/30 group-hover:bg-brand-600 transition-colors">
+        <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+        </svg>
+      </div>
+      <span class="text-lg font-extrabold tracking-tight text-surface-900 font-display">Pactly</span>
+    </a>
+
+    <!-- Nav links -->
+    <div class="hidden sm:flex items-center gap-7">
+      <a href="#features" class="text-sm font-medium text-surface-800/60 hover:text-surface-900 transition-colors">Features</a>
+      <a href="#how-it-works" class="text-sm font-medium text-surface-800/60 hover:text-surface-900 transition-colors">How it works</a>
     </div>
+
+    <!-- CTA -->
+    <a
+      href="#cta"
+      class="text-sm font-semibold bg-brand-500 text-white px-4 py-2.5 rounded-lg hover:bg-brand-600 transition-colors shadow-sm shadow-brand-500/25"
+    >
+      Start my pact
+    </a>
   </nav>
 </header>

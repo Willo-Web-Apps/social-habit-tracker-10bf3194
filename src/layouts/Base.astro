@@ -8,7 +8,10 @@ interface Props {
   description?: string;
 }
 
-const { title = "Your New Business", description = "Habit tracker with social accountability" } = Astro.props;
+const {
+  title = "Pactly — Build habits. Keep promises. Together.",
+  description = "Pactly turns your real friendships into an accountability system — track habits together, celebrate streaks, and never break a promise alone."
+} = Astro.props;
 ---
 <!doctype html>
 <html lang="en" class="scroll-smooth">
@@ -18,13 +21,14 @@ const { title = "Your New Business", description = "Habit tracker with social ac
     <meta name="description" content={description} />
     <meta property="og:title" content={title} />
     <meta property="og:description" content={description} />
+    <meta property="og:type" content="website" />
     <title>{title}</title>
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@type": "Organization",
-      "name": "Your New Business",
-      "description": "Habit tracker with social accountability",
+      "name": "Pactly",
+      "description": "Pactly turns your real friendships into an accountability system — track habits together, celebrate streaks, and never break a promise alone.",
       "url": "https://social-habit-tracker.onrender.com"
     }
     </script>
